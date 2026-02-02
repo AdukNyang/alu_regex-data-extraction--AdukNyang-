@@ -42,19 +42,19 @@ When you run the script, you'll see something like:
 ```
 EMAILS FOUND:
   Valid: 5
-    ✓ adit.bol@company.com
-    ✓ adau.dorcus@tech-solutions.co.uk
+    ✓ aduk.mathiang@company.com
+    ✓ aduk.mathiang@tech-solutions.co.uk
     ...
   Invalid/Rejected: 1
     ✗ test..email@example.com - invalid
 
 URLS FOUND:
   Valid: 4
-    ✓ https://www.johnsmith-portfolio.dev/projects
+    ✓ https://www.adukmathiang-portfolio.dev/projects
     ...
 ```
 And so on, plus a JSON dump of all results.
-You can also check the output in the sample_output.txt file.
+You can also check the output in the sample_output.txt file to see the entire output.
 
 ## License
 MIT (do whatever you want, but don't blame me if it breaks)

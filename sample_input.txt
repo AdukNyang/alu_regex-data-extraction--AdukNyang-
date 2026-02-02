@@ -1,15 +1,15 @@
 CUSTOMER DATA REPORT - Jan 2026
 
 Contact Information:
-- Adit Bol: adit.bol@company.com (verified)
-- Adau Dorcus: adau.dorcus@tech-solutions.co.uk
+- Aduk Mathiang: aduk.mathiang@company.com (verified)
+- Aduk Mathiang: aduk.mathiang@tech-solutions.co.uk
 - Invalid: user@.com, test..email@example.com, @missing.com
 - Suspicious: admin' OR '1'='1@example.com (SQL injection attempt)
 
 Social Profiles & Web Links:
-- Portfolio: https://www.johnsmith-portfolio.dev/projects
+- Portfolio: https://www.adukmathiang-portfolio.dev/projects
 - Blog: http://tech-blog.io/articles?id=42&sort=date
-- Github: https://github.com/user/repo/tree/main
+- Github: https://github.com/AdukNyang
 - Invalid: htps://typo.com, javascript:alert('xss')
 - Malicious: https://example.com<script>alert('xss')</script>
 
@@ -30,7 +30,7 @@ Payment Information (MASKED FOR SECURITY):
 - Dash variant: 5412-1234-5678-9012
 
 MALICIOUS/EDGE CASES:
-- Email: test@example.com; DROP TABLE users;--
+- Email: a.nyang@alustudent.com; DROP TABLE users;--
 - URL: https://evil.com/callback?token=<script>alert(1)</script>
 - Phone that looks like date: 2024-01-15 (should NOT match as phone)
 - Card with special chars: 5412@1234-5678_9012

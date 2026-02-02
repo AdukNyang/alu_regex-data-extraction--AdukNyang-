@@ -125,7 +125,7 @@ SAMPLE_INPUT = """
 CUSTOMER DATA REPORT - Jan 2026
 
 Contact Information:
-- Aduk Mahiang: aduk.mathiang@company.com (verified)
+- Aduk Mathiang: aduk.mathiang@company.com (verified)
 - Aduk Mathiang: aduk.mathiang@tech-solutions.co.uk
 - Invalid: user@.com, test..email@example.com, @missing.com
 - Suspicious: admin' OR '1'='1@example.com (SQL injection attempt)
