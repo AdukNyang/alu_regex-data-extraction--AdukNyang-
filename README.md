@@ -54,7 +54,7 @@ URLS FOUND:
     ...
 ```
 And so on, plus a JSON dump of all results.
-You can also check the output in the sapmple_output.txt file.
+You can also check the output in the sample_output.txt file.
 
 ## License
 MIT (do whatever you want, but don't blame me if it breaks)
