@@ -1,0 +1,185 @@
+======================================================================
+DATA EXTRACTION & SECURE VALIDATION PROGRAM
+======================================================================
+
+EXTRACTION RESULTS
+----------------------------------------------------------------------
+
+EMAILS FOUND:
+  Valid: 5
+    + adit.bol@company.com
+    + adau.dorcus@tech-solutions.co.uk
+    + 1@example.com
+    + test@example.com
+    + user+tag@example.com
+  Invalid/Rejected: 1
+    - test..email@example.com - invalid
+
+URLS FOUND:
+  Valid: 5
+    + https://www.johnsmith-portfolio.dev/projects
+    + http://tech-blog.io/articles?id=42&sort=date
+    + https://github.com/user/repo/tree/main
+    + https://example.com
+    + https://evil.com/callback?token=
+
+PHONE NUMBERS FOUND:
+  Valid: 6
+    + (555) 123-4567
+    + 555-123-4567
+    + 555.123.4567
+    + +1-555-123-4567
+    + 555-123-4567 ext 201
+    + 822463 1000
+  Invalid/Rejected: 1
+    - 111-111-1111 - invalid
+
+CREDIT CARDS FOUND (MASKED FOR SECURITY):
+  Valid: 5
+    + ************9010 (format: 4532 1234 5678 9010)
+    + ************9012 (format: 5412 1234 5678 9012)
+    + ***********0005 (format: 3782 822463 10005)
+    + ************9012 (format: 5412 1234 5678 9012)
+    + ************9012 (format: 5412-1234-5678-9012)
+  Invalid/Rejected: 1
+    - 9999-9999-9999-9999 - invalid
+
+
+JSON OUTPUT:
+{
+  "emails": [
+    {
+      "type": "email",
+      "value": "adit.bol@company.com",
+      "status": "valid"
+    },
+    {
+      "type": "email",
+      "value": "adau.dorcus@tech-solutions.co.uk",
+      "status": "valid"
+    },
+    {
+      "type": "email",
+      "value": "test..email@example.com",
+      "status": "invalid"
+    },
+    {
+      "type": "email",
+      "value": "1@example.com",
+      "status": "valid"
+    },
+    {
+      "type": "email",
+      "value": "test@example.com",
+      "status": "valid"
+    },
+    {
+      "type": "email",
+      "value": "user+tag@example.com",
+      "status": "valid"
+    }
+  ],
+  "urls": [
+    {
+      "type": "url",
+      "value": "https://www.johnsmith-portfolio.dev/projects",
+      "status": "valid"
+    },
+    {
+      "type": "url",
+      "value": "http://tech-blog.io/articles?id=42&sort=date",
+      "status": "valid"
+    },
+    {
+      "type": "url",
+      "value": "https://github.com/user/repo/tree/main",
+      "status": "valid"
+    },
+    {
+      "type": "url",
+      "value": "https://example.com",
+      "status": "valid"
+    },
+    {
+      "type": "url",
+      "value": "https://evil.com/callback?token=",
+      "status": "valid"
+    }
+  ],
+  "phones": [
+    {
+      "type": "phone",
+      "value": "(555) 123-4567",
+      "status": "valid"
+    },
+    {
+      "type": "phone",
+      "value": "555-123-4567",
+      "status": "valid"
+    },
+    {
+      "type": "phone",
+      "value": "555.123.4567",
+      "status": "valid"
+    },
+    {
+      "type": "phone",
+      "value": "+1-555-123-4567",
+      "status": "valid"
+    },
+    {
+      "type": "phone",
+      "value": "555-123-4567 ext 201",
+      "status": "valid"
+    },
+    {
+      "type": "phone",
+      "value": "111-111-1111",
+      "status": "invalid"
+    },
+    {
+      "type": "phone",
+      "value": "822463 1000",
+      "status": "valid"
+    }
+  ],
+  "credit_cards": [
+    {
+      "type": "credit_card",
+      "value": "************9010",
+      "status": "valid",
+      "raw_format": "4532 1234 5678 9010"
+    },
+    {
+      "type": "credit_card",
+      "value": "************9012",
+      "status": "valid",
+      "raw_format": "5412 1234 5678 9012"
+    },
+    {
+      "type": "credit_card",
+      "value": "***********0005",
+      "status": "valid",
+      "raw_format": "3782 822463 10005"
+    },
+    {
+      "type": "credit_card",
+      "value": "9999-9999-9999-9999",
+      "status": "invalid"
+    },
+    {
+      "type": "credit_card",
+      "value": "************9012",
+      "status": "valid",
+      "raw_format": "5412 1234 5678 9012"
+    },
+    {
+      "type": "credit_card",
+      "value": "************9012",
+      "status": "valid",
+      "raw_format": "5412-1234-5678-9012"
+    }
+  ]
+}
+
+

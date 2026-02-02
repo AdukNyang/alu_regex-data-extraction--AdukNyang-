@@ -1,6 +1,3 @@
-# alu_regex-data-extraction--AdukNyang-
-Regex practical assessment.
-
 # Regex Data Extraction & Validation
 
 This project is a simple Python script that pulls out and checks common types of data from messy text using regular expressions. It's designed for real-world, sometimes ugly data, and tries to be careful about security.
@@ -26,7 +23,7 @@ This project is a simple Python script that pulls out and checks common types of
 
 ## What's In The Code
 - **regex.py**: The main script. All the logic is here.
-- **SAMPLE_INPUT**: A big string at the bottom of the script with lots of example data, including edge cases and some intentionally bad input.
+- **SAMPLE_INPUT**: A big string at the bottom of the script with lots of example data, including edge cases and some intentional bad input.
 - **DataExtractor class**: Handles all the regex searching and validation. Each method is commented so you can see what it's doing and why.
 
 ## Security Notes
@@ -45,8 +42,8 @@ When you run the script, you'll see something like:
 ```
 EMAILS FOUND:
   Valid: 5
-    ✓ john.smith@company.com
-    ✓ sarah.obrien@tech-solutions.co.uk
+    ✓ adit.bol@company.com
+    ✓ adau.dorcus@tech-solutions.co.uk
     ...
   Invalid/Rejected: 1
     ✗ test..email@example.com - invalid
@@ -57,6 +54,7 @@ URLS FOUND:
     ...
 ```
 And so on, plus a JSON dump of all results.
+You can also check the output in the sapmple_output.txt file.
 
 ## License
 MIT (do whatever you want, but don't blame me if it breaks)

@@ -1,0 +1,39 @@
+CUSTOMER DATA REPORT - Jan 2026
+
+Contact Information:
+- Adit Bol: adit.bol@company.com (verified)
+- Adau Dorcus: adau.dorcus@tech-solutions.co.uk
+- Invalid: user@.com, test..email@example.com, @missing.com
+- Suspicious: admin' OR '1'='1@example.com (SQL injection attempt)
+
+Social Profiles & Web Links:
+- Portfolio: https://www.johnsmith-portfolio.dev/projects
+- Blog: http://tech-blog.io/articles?id=42&sort=date
+- Github: https://github.com/user/repo/tree/main
+- Invalid: htps://typo.com, javascript:alert('xss')
+- Malicious: https://example.com<script>alert('xss')</script>
+
+Phone Directory:
+- Office Main: (555) 123-4567
+- Cell 1: 555-123-4567
+- Cell 2: 555.123.4567
+- Intl: +1-555-123-4567
+- With Ext: 555-123-4567 ext 201
+- Invalid: 123-456, 111-111-1111 (repeated digits)
+
+Payment Information (MASKED FOR SECURITY):
+- Visa: 4532 1234 5678 9010
+- Mastercard: 5412 1234 5678 9012
+- American Express: 3782 822463 10005
+- Invalid: 1234 5678 (too short), 9999-9999-9999-9999 (repeated)
+- Spaces variant: 5412 1234 5678 9012
+- Dash variant: 5412-1234-5678-9012
+
+MALICIOUS/EDGE CASES:
+- Email: test@example.com; DROP TABLE users;--
+- URL: https://evil.com/callback?token=<script>alert(1)</script>
+- Phone that looks like date: 2024-01-15 (should NOT match as phone)
+- Card with special chars: 5412@1234-5678_9012
+- Data injection: user+tag@example.com (valid variant)
+
+END OF REPORT
